@@ -109,7 +109,7 @@ const songs = {
     },
     {
       title: "Kanave Kanave",
-      video: "https://www.youtube.com/watch?v=r_GCRFRcWxA",
+      video: "https://youtu.be/wFn8Exk6I9I?si=F2nb12qOuA-Uq7LT",
       img: "https://img.youtube.com/vi/r_GCRFRcWxA/hqdefault.jpg"
     },
     {
