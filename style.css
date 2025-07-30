@@ -1,138 +1,84 @@
-/* Base reset and font */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
   color: #fff;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-/* Glassmorphic container */
-.container {
   text-align: center;
   padding: 2rem;
 }
 
-/* Typewriter animated title */
-.typewriter {
-  font-size: 2rem;
-  overflow: hidden;
-  border-right: 0.15em solid #fff;
-  white-space: nowrap;
-  margin: 1rem auto;
-  letter-spacing: 0.15em;
-  animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
-  max-width: fit-content;
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-@keyframes typing {
-  from {
-    width: 0
-  }
-  to {
-    width: 100%
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent
-  }
-  50% {
-    border-color: #fff
-  }
-}
-
-/* Emoji mood buttons */
-.emoji-list {
-  margin: 1.5rem auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem;
-}
-
-.emoji-list button {
-  font-size: 2rem;
-  padding: 0.6rem 1rem;
-  border: none;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(6px);
-  border-radius: 1rem;
+.emoji-container span {
+  font-size: 2.5rem;
+  margin: 0 10px;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.3s ease;
 }
 
-.emoji-list button:hover {
-  transform: scale(1.2);
+.emoji-container span:hover {
+  transform: scale(1.3);
 }
 
-/* Card section */
-.card-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .card {
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(8px);
-  border-radius: 20px;
-  padding: 1.2rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
 }
 
 .card h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  font-family: 'Noto Sans Tamil', sans-serif;
   margin-bottom: 0.5rem;
-  color: #fcd5ce;
+  color: #ffd;
 }
 
-/* Lyrics toggle button */
-.toggle-lyrics {
-  margin-top: 0.5rem;
-  background-color: #fcd5ce;
-  color: #111;
-  padding: 0.4rem 0.8rem;
+.lyrics-box {
+  margin-top: 10px;
+  padding: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: 'Noto Sans Tamil', sans-serif;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  color: #fff;
+  line-height: 1.6;
+  display: none;
+}
+
+.toggle-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
   border: none;
+  padding: 8px 16px;
   border-radius: 8px;
   cursor: pointer;
-  font-weight: bold;
-  transition: 0.2s;
+  margin-top: 10px;
+  font-weight: 600;
+  transition: background 0.3s ease;
 }
 
-.toggle-lyrics:hover {
-  background-color: #ffe5d9;
+.toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.lyrics {
+audio {l
   display: none;
-  margin-top: 0.6rem;
-  font-size: 0.95rem;
-  text-align: left;
-  white-space: pre-wrap;
-  background: rgba(255, 255, 255, 0.08);
-  padding: 0.6rem;
-  border-radius: 10px;
-  color: #ffffff;
-}
-
-/* Responsive tweaks */
-@media (max-width: 480px) {
-  .typewriter {
-    font-size: 1.5rem;
-  }
-
-  .emoji-list button {
-    font-size: 1.5rem;
-    padding: 0.4rem 0.8rem;
-  }
 }
