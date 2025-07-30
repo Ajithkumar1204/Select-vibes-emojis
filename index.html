@@ -3,35 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>🎵 Emoji Mood Music Recommender</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Tamil Mood Music 🎵</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <audio id="bgMusic" autoplay loop>
-    <source src="assets/bg.mp3" type="audio/mp3" />
+  <h1>🎧 Tamil Mood Music Recommender</h1>
+
+  <!-- Background music -->
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg" />
     Your browser does not support the audio element.
   </audio>
 
-  <div class="container">
-    <h1>Select a Mood to Discover Tamil Songs</h1>
-    
-    <div class="emoji-container">
-      <span onclick="showSongs('calm')">😌</span>
-      <span onclick="showSongs('love')">😍</span>
-      <span onclick="showSongs('motivational')">🤯</span>
-      <span onclick="showSongs('party')">🕺</span>
-      <span onclick="showSongs('sad')">😢</span>
-      <span onclick="showSongs('cool')">😎</span>
-      <span onclick="showSongs('comedy')">😂</span>
-      <span onclick="showSongs('romantic')">🥰</span>
-      <span onclick="showSongs('angry')">😠</span>
-      <span onclick="showSongs('peace')">🧘</span>
-    </div>
-
-    <div id="cardSection" class="card-section">
-      <p class="hint">Choose an emoji to view song suggestions...</p>
-    </div>
+  <!-- Emoji Mood Buttons -->
+  <div class="emoji-container">
+    <div class="emoji-btn" onclick="showSongs('happy')">😊</div>
+    <div class="emoji-btn" onclick="showSongs('sad')">😢</div>
+    <div class="emoji-btn" onclick="showSongs('love')">❤️</div>
+    <div class="emoji-btn" onclick="showSongs('party')">🕺</div>
+    <div class="emoji-btn" onclick="showSongs('calm')">😌</div>
+    <div class="emoji-btn" onclick="showSongs('angry')">😡</div>
+    <div class="emoji-btn" onclick="showSongs('romantic')">💞</div>
+    <div class="emoji-btn" onclick="showSongs('energetic')">⚡</div>
   </div>
+
+  <!-- Cards Area -->
+  <div id="cardSection" class="card-container"></div>
 
   <script src="script.js"></script>
 </body>
