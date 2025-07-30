@@ -9,6 +9,11 @@ const songs = {
       title: "Jimikki Kammal",
       video: "https://www.youtube.com/watch?v=y3wiW1aUQ00",
       img: "https://img.youtube.com/vi/y3wiW1aUQ00/hqdefault.jpg"
+    },
+    {
+      title: "Chill Bro",
+      video: "https://www.youtube.com/watch?v=JpL3gkYJ1Kk",
+      img: "https://img.youtube.com/vi/JpL3gkYJ1Kk/hqdefault.jpg"
     }
   ],
   sad: [
@@ -16,6 +21,16 @@ const songs = {
       title: "Unna Nenachu",
       video: "https://www.youtube.com/watch?v=pxCzxxjP-TM",
       img: "https://img.youtube.com/vi/pxCzxxjP-TM/hqdefault.jpg"
+    },
+    {
+      title: "Ennodu Nee Irundhaal",
+      video: "https://www.youtube.com/watch?v=7qYHscb1Vb4",
+      img: "https://img.youtube.com/vi/7qYHscb1Vb4/hqdefault.jpg"
+    },
+    {
+      title: "Oru Naalil",
+      video: "https://www.youtube.com/watch?v=3RWrjGJuhUI",
+      img: "https://img.youtube.com/vi/3RWrjGJuhUI/hqdefault.jpg"
     }
   ],
   love: [
@@ -23,6 +38,16 @@ const songs = {
       title: "Kadhal Kan Kattudhe",
       video: "https://www.youtube.com/watch?v=TblG93FZktc",
       img: "https://img.youtube.com/vi/TblG93FZktc/hqdefault.jpg"
+    },
+    {
+      title: "Enna Solla Pogirai",
+      video: "https://www.youtube.com/watch?v=Oy6HKIbfFdw",
+      img: "https://img.youtube.com/vi/Oy6HKIbfFdw/hqdefault.jpg"
+    },
+    {
+      title: "Anbil Avan",
+      video: "https://www.youtube.com/watch?v=qq_Xy6IopM4",
+      img: "https://img.youtube.com/vi/qq_Xy6IopM4/hqdefault.jpg"
     }
   ],
   party: [
@@ -30,6 +55,16 @@ const songs = {
       title: "Aaluma Doluma",
       video: "https://www.youtube.com/watch?v=yvAxVj9TFAw",
       img: "https://img.youtube.com/vi/yvAxVj9TFAw/hqdefault.jpg"
+    },
+    {
+      title: "Vaathi Raid",
+      video: "https://www.youtube.com/watch?v=zjvYOfn2B94",
+      img: "https://img.youtube.com/vi/zjvYOfn2B94/hqdefault.jpg"
+    },
+    {
+      title: "Rowdy Baby",
+      video: "https://www.youtube.com/watch?v=x6QZn9xiuOE",
+      img: "https://img.youtube.com/vi/x6QZn9xiuOE/hqdefault.jpg"
     }
   ],
   calm: [
@@ -37,6 +72,16 @@ const songs = {
       title: "Pachai Nirame",
       video: "https://www.youtube.com/watch?v=YY9MjGFfqx4",
       img: "https://img.youtube.com/vi/YY9MjGFfqx4/hqdefault.jpg"
+    },
+    {
+      title: "Munbe Vaa",
+      video: "https://www.youtube.com/watch?v=YuIX6eL6ebM",
+      img: "https://img.youtube.com/vi/YuIX6eL6ebM/hqdefault.jpg"
+    },
+    {
+      title: "Vaseegara",
+      video: "https://www.youtube.com/watch?v=R-YmHeM69yc",
+      img: "https://img.youtube.com/vi/R-YmHeM69yc/hqdefault.jpg"
     }
   ],
   angry: [
@@ -44,6 +89,16 @@ const songs = {
       title: "Udhungada Sangu",
       video: "https://www.youtube.com/watch?v=NsHY5JqShRM",
       img: "https://img.youtube.com/vi/NsHY5JqShRM/hqdefault.jpg"
+    },
+    {
+      title: "Surviva",
+      video: "https://www.youtube.com/watch?v=XPwVq56lFao",
+      img: "https://img.youtube.com/vi/XPwVq56lFao/hqdefault.jpg"
+    },
+    {
+      title: "Danga Maari",
+      video: "https://www.youtube.com/watch?v=fWLvItDLgvY",
+      img: "https://img.youtube.com/vi/fWLvItDLgvY/hqdefault.jpg"
     }
   ],
   romantic: [
@@ -51,6 +106,16 @@ const songs = {
       title: "Thalli Pogathey",
       video: "https://www.youtube.com/watch?v=YpuaZ5N1XZg",
       img: "https://img.youtube.com/vi/YpuaZ5N1XZg/hqdefault.jpg"
+    },
+    {
+      title: "Kanave Kanave",
+      video: "https://www.youtube.com/watch?v=r_GCRFRcWxA",
+      img: "https://img.youtube.com/vi/r_GCRFRcWxA/hqdefault.jpg"
+    },
+    {
+      title: "New York Nagaram",
+      video: "https://www.youtube.com/watch?v=XzErQ9N4mLQ",
+      img: "https://img.youtube.com/vi/XzErQ9N4mLQ/hqdefault.jpg"
     }
   ],
   energetic: [
@@ -58,6 +123,16 @@ const songs = {
       title: "Don'u Don'u Don'u",
       video: "https://www.youtube.com/watch?v=A4MmvMwqY8M",
       img: "https://img.youtube.com/vi/A4MmvMwqY8M/hqdefault.jpg"
+    },
+    {
+      title: "Chellamma",
+      video: "https://www.youtube.com/watch?v=xfs7RGzv8dY",
+      img: "https://img.youtube.com/vi/xfs7RGzv8dY/hqdefault.jpg"
+    },
+    {
+      title: "Sodakku",
+      video: "https://www.youtube.com/watch?v=7txWfGkCkS4",
+      img: "https://img.youtube.com/vi/7txWfGkCkS4/hqdefault.jpg"
     }
   ]
 };
@@ -87,3 +162,4 @@ function showSongs(mood) {
     container.appendChild(card);
   });
 }
+
