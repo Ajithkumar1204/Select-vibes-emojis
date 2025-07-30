@@ -127,12 +127,12 @@ const songs = {
     {
       title: "Chellamma",
       video: "https://www.youtube.com/watch?v=DV7nV9W7y-0",
-      img: "https://images.app.goo.gl/c7DLKwjYJnacst2z7"
+      img: "https://c.saavncdn.com/489/Chellamma-From-Doctor--Tamil-2020-20200716110528-500x500.jpg"
     },
      {
-      title: "Chellamma",
+      title: "Sodaku Mela",
       video: "https://www.youtube.com/watch?v=pn6M7_L1JbQ",
-      img: "https://images.app.goo.gl/LBQjBEn3tpE5P2Ay7"
+      img: "https://images.indianexpress.com/2017/10/sodakku-1.jpg"
     }
   ]
 };
