@@ -1,84 +1,88 @@
 body {
-  margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #1f1c2c, #928dab);
+  background: linear-gradient(145deg, #1e1e2f, #2c2c3a);
   color: #fff;
   text-align: center;
-  padding: 2rem;
+  padding: 20px;
+  margin: 0;
 }
 
-.title {
+h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
+  color: #00ffc8;
+  text-shadow: 2px 2px 5px #000;
 }
 
-.emoji-container span {
-  font-size: 2.5rem;
-  margin: 0 10px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.emoji-container span:hover {
-  transform: scale(1.3);
-}
-
-.cards {
+.emoji-container {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.emoji-btn {
+  font-size: 2.2rem;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 15px;
+  transition: transform 0.4s, box-shadow 0.4s;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+}
+
+.emoji-btn:hover {
+  transform: scale(1.2) rotate(5deg);
+  box-shadow: 0 0 15px #00ffc8;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
 .card {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  border-radius: 20px;
   padding: 20px;
-  backdrop-filter: blur(10px);
+  width: 300px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-  max-width: 600px;
-  margin: auto;
-  text-align: left;
+  backdrop-filter: blur(12px);
+  color: #fff;
+  animation: rollIn 0.6s ease;
 }
 
 .card h3 {
-  font-size: 1.4rem;
-  font-family: 'Noto Sans Tamil', sans-serif;
-  margin-bottom: 0.5rem;
-  color: #ffd;
-}
-
-.lyrics-box {
-  margin-top: 10px;
-  padding: 15px;
-  max-height: 200px;
-  overflow-y: auto;
-  font-family: 'Noto Sans Tamil', sans-serif;
-  font-size: 16px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  backdrop-filter: blur(8px);
-  color: #fff;
-  line-height: 1.6;
-  display: none;
-}
-
-.toggle-btn {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: 600;
-  transition: background 0.3s ease;
+  color: #00ffc8;
+  min-height: 50px;
 }
 
-.toggle-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
+.card iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  border: none;
 }
 
-audio {l
-  display: none;
+@keyframes rollIn {
+  from {
+    transform: translateX(-100%) rotate(-720deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
 }
