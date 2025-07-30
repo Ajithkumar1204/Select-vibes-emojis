@@ -10,7 +10,7 @@ const songs = {
     { title: "Oru Naalil - Pudhupettai", video: "https://www.youtube.com/embed/8f5cZ28wErk" }
   ],
   love: [
-    { title: "Kadhal Kan Kattudhe", video: "https://www.youtube.com/embed/TblG93FZktc" },
+    { title: "Kadhal Kan Kattudhe", video: "https://youtu.be/DjgwkfFnakM?si=GGQa-y0LPMYoxK4D" },
     { title: "Enna Solla Pogirai", video: "https://www.youtube.com/embed/Qk19z8dN3HU" },
     { title: "Munbe Vaa - Sillunu Oru Kaadhal", video: "https://www.youtube.com/embed/J40A3iQ9z1Y" }
   ],
