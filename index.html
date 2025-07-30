@@ -3,37 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tamil Mood Music 🎶</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <title>Tamil Mood Music 🎵</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>🎵 Tamil Mood Music Recommender</h1>
-    <button id="toggleTheme">🌙</button>
-  </header>
+  <h1>🎧 Tamil Mood Music Recommender</h1>
 
-  <main>
-    <h2>How are you feeling today? 🤔</h2>
-    <div class="mood-buttons">
-      <button data-mood="Happy">😊 Happy</button>
-      <button data-mood="Sad">😢 Sad</button>
-      <button data-mood="Energetic">⚡ Energetic</button>
-      <button data-mood="Relaxed">😌 Relaxed</button>
-      <button data-mood="Romantic">❤️ Romantic</button>
-      <button data-mood="Cool">😎 Cool</button>
-      <button data-mood="Heartbroken">💔 Heartbroken</button>
-      <button data-mood="Party">🕺 Party</button>
-      <button data-mood="Calm">🧘 Calm</button>
-    </div>
+  <div class="emoji-container">
+    <div class="emoji-btn" onclick="showSongs('happy')">😊</div>
+    <div class="emoji-btn" onclick="showSongs('sad')">😢</div>
+    <div class="emoji-btn" onclick="showSongs('love')">❤️</div>
+    <div class="emoji-btn" onclick="showSongs('party')">🕺</div>
+    <div class="emoji-btn" onclick="showSongs('calm')">😌</div>
+    <div class="emoji-btn" onclick="showSongs('angry')">😡</div>
+    <div class="emoji-btn" onclick="showSongs('romantic')">💞</div>
+    <div class="emoji-btn" onclick="showSongs('energetic')">⚡</div>
+  </div>
 
-    <section class="playlist" id="playlistSection">
-      <p>Select a mood to discover Tamil songs!</p>
-    </section>
-  </main>
+  <div id="cardSection" class="card-container"></div>
 
-  <footer>
-    <p>🎧 Made with ❤️ by AJITHKUMAR</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
