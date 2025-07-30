@@ -1,86 +1,103 @@
+/* Base styles */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(145deg, #1e1e2f, #2c2c3a);
+  background: linear-gradient(135deg, #1e1e2f, #2c2c3a);
   color: #fff;
   text-align: center;
   padding: 20px;
   margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
+/* Header */
 h1 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #00ffc8;
   text-shadow: 2px 2px 5px #000;
 }
 
+/* Emoji section */
 .emoji-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-.emoji-btn {
+.emoji-container span {
   font-size: 2.2rem;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
   padding: 15px;
-  transition: transform 0.4s, box-shadow 0.4s;
-  box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 255, 200, 0.1);
 }
 
-.emoji-btn:hover {
-  transform: scale(1.2) rotate(5deg);
-  box-shadow: 0 0 15px #00ffc8;
+.emoji-container span:hover {
+  transform: scale(1.3);
+  box-shadow: 0 0 20px #00ffc8;
 }
 
+/* Card layout */
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
 }
 
+/* Individual card */
 .card {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 20px;
-  width: 300px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  border-radius: 18px;
   backdrop-filter: blur(12px);
-  color: #fff;
-  animation: rollIn 0.6s ease;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 255, 200, 0.25);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card h3 {
   margin-bottom: 10px;
-  font-weight: 600;
+  font-size: 1.2rem;
   color: #00ffc8;
   min-height: 50px;
 }
 
-.card iframe {
-  width: 100%;
-  height: 180px;
-  border-radius: 12px;
-  border: none;
-}
-
-@keyframes rollIn {
+/* Fade animation for cards */
+@keyframes fadeInUp {
   from {
-    transform: translateX(-100%) rotate(-720deg);
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: translateX(0) rotate(0deg);
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
+/* Responsive adjustments */
 @media screen and (max-width: 600px) {
   .card {
     width: 90%;
