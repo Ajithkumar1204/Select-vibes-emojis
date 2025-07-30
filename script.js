@@ -126,13 +126,13 @@ const songs = {
     },
     {
       title: "Chellamma",
-      video: "https://www.youtube.com/watch?v=xfs7RGzv8dY",
-      img: "https://img.youtube.com/vi/xfs7RGzv8dY/hqdefault.jpg"
+      video: "https://www.youtube.com/watch?v=DV7nV9W7y-0",
+      img: "https://images.app.goo.gl/c7DLKwjYJnacst2z7"
     },
     {
       title: "Sodakku",
-      video: "https://www.youtube.com/watch?v=7txWfGkCkS4",
-      img: "https://img.youtube.com/vi/7txWfGkCkS4/hqdefault.jpg"
+      video: "https://www.youtube.com/watch?v=pn6M7_L1JbQ,
+      img: "https://images.app.goo.gl/LBQjBEn3tpE5P2Ay7"
     }
   ]
 };
