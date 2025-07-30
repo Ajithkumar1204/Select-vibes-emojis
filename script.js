@@ -121,8 +121,8 @@ const songs = {
   energetic: [
     {
       title: "Don'u Don'u Don'u",
-      video: "https://www.youtube.com/watch?v=A4MmvMwqY8M",
-      img: "https://img.youtube.com/vi/A4MmvMwqY8M/hqdefault.jpg"
+      video: "https://www.youtube.com/watch?v=A_z5g0_hJN8&pp=0gcJCdgAo7VqN5tD",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvKqdA-GaCHBanOdj0HPoGJmJusVUhta03dg&s"
     },
     {
       title: "Chellamma",
