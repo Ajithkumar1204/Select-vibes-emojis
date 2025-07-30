@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html lang="ta">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tamil Mood Lyrics 🎵</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Tamil Mood Music 🎵</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1 class="title">🎧 உங்கள் உணர்வுக்கேற்ற தமிழ்ப் பாடல்கள்</h1>
-  
+  <h1>🎧 Tamil Mood Music Recommender</h1>
+
   <div class="emoji-container">
-    <span onclick="showSongs('calm')">😌</span>
-    <span onclick="showSongs('love')">😍</span>
-    <span onclick="showSongs('motivational')">🤯</span>
-    <span onclick="showSongs('party')">🕺</span>
+    <div class="emoji-btn" onclick="showSongs('happy')">😊</div>
+    <div class="emoji-btn" onclick="showSongs('sad')">😢</div>
+    <div class="emoji-btn" onclick="showSongs('love')">❤️</div>
+    <div class="emoji-btn" onclick="showSongs('party')">🕺</div>
+    <div class="emoji-btn" onclick="showSongs('calm')">😌</div>
+    <div class="emoji-btn" onclick="showSongs('angry')">😡</div>
+    <div class="emoji-btn" onclick="showSongs('romantic')">💞</div>
+    <div class="emoji-btn" onclick="showSongs('energetic')">⚡</div>
   </div>
 
-  <div id="cardSection" class="cards"></div>
-
-  <!-- Background Music -->
-  <audio autoplay loop>
-    <source src="bgmusic.mp3" type="audio/mpeg" />
-    Your browser does not support background music.
-  </audio>
+  <div id="cardSection" class="card-container"></div>
 
   <script src="script.js"></script>
 </body>
