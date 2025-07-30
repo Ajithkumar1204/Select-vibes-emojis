@@ -11,7 +11,7 @@ const songs = {
   ],
   love: [
     { title: "Kadhal Kan Kattudhe", video: "https://www.youtube.com/embed/s-4TP_gjH5Q" },
-    { title: "Enna Solla Pogirai", video: "https://www.youtube.com/embed/l5p_P86aJ2U" },
+    { title: "Enna Solla Pogirai", video: "https://youtu.be/xZ92nnR1Pt8?si=8kIF5mydUdN-C1XF" },
     { title: "Munbe Vaa - Sillunu Oru Kadhal", video: "https://www.youtube.com/embed/f5gOtEk8G-Q" }
   ],
   party: [
