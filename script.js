@@ -109,8 +109,8 @@ const songs = {
     },
     {
       title: "Kanave Kanave",
-      video: "https://youtu.be/MofM9B2NZpY?si=NWvbww1pL96C0BE6",
-      img: "https://images.app.goo.gl/YRts7ZnYV3suo9TVA1753962642894000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPCzupnC5I4DFQAAAAAdAAAAABAE"
+      video: "https://www.youtube.com/watch?v=XzErQ9N4mLQ",
+      img: "https://img.youtube.com/vi/XzErQ9N4mLQ/hqdefault.jpg"
     },
     {
       title: "New York Nagaram",
