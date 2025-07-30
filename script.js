@@ -1,67 +1,70 @@
-const playlistData = {
-  Happy: [
-    "😊 <a href='https://youtu.be/UTI0X0UeE-A' target='_blank'>Vaathi Coming – Master</a>",
-    "🥳 <a href='https://youtu.be/2K2wnJ6SgFY' target='_blank'>So Baby – Doctor</a>"
+const songs = {
+  happy: [
+    { title: "Vaathi Coming - Master", video: "https://www.youtube.com/embed/UTI0X0UeE-A" },
+    { title: "Jimikki Kammal - Velipadinte Pusthakam", video: "https://www.youtube.com/embed/y3wiW1aUQ00" },
+    { title: "Aathichudi - TN 07 AL 4777", video: "https://www.youtube.com/embed/GH5VmIipuxc" }
   ],
-  Sad: [
-    "😢 <a href='https://youtu.be/pxCzxxjP-TM' target='_blank'>Unna Nenachu – Psycho</a>",
-    "💔 <a href='https://youtu.be/V9OfBO7MQxM' target='_blank'>Vennilave Vennilave – Minsara Kanavu</a>"
+  sad: [
+    { title: "Unna Nenachu - Psycho", video: "https://www.youtube.com/embed/pxCzxxjP-TM" },
+    { title: "Ninaithu Ninaithu - 7G Rainbow Colony", video: "https://www.youtube.com/embed/K3KnWh1cw9A" },
+    { title: "Oru Naalil - Pudhupettai", video: "https://www.youtube.com/embed/8f5cZ28wErk" }
   ],
-  Energetic: [
-    "⚡ <a href='https://youtu.be/yvAxVj9TFAw' target='_blank'>Aaluma Doluma – Vedalam</a>",
-    "🔥 <a href='https://youtu.be/GN-6lU0oP2w' target='_blank'>Surviva – Vivegam</a>"
+  love: [
+    { title: "Kadhal Kan Kattudhe", video: "https://www.youtube.com/embed/TblG93FZktc" },
+    { title: "Enna Solla Pogirai", video: "https://www.youtube.com/embed/Qk19z8dN3HU" },
+    { title: "Munbe Vaa - Sillunu Oru Kaadhal", video: "https://www.youtube.com/embed/J40A3iQ9z1Y" }
   ],
-  Relaxed: [
-    "😌 <a href='https://youtu.be/jbpV2C8pZ_M' target='_blank'>Pachai Nirame – Alaipayuthey</a>",
-    "🌙 <a href='https://youtu.be/BwrZ6f1z3ic' target='_blank'>Nee Partha Vizhigal – 3</a>"
+  party: [
+    { title: "Aaluma Doluma - Vedalam", video: "https://www.youtube.com/embed/yvAxVj9TFAw" },
+    { title: "Sodakku - Thaanaa Serndha Koottam", video: "https://www.youtube.com/embed/qvOTIpRylNw" },
+    { title: "Local Boys - Ethir Neechal", video: "https://www.youtube.com/embed/Tya3vY1fYwQ" }
   ],
-  Romantic: [
-    "❤️ <a href='https://youtu.be/TblG93FZktc' target='_blank'>Kadhal Kan Kattudhe</a>",
-    "💘 <a href='https://youtu.be/MNfCnAIEYb4' target='_blank'>Enna Solla – Thangamagan</a>"
+  calm: [
+    { title: "Pachai Nirame - Alaipayuthey", video: "https://www.youtube.com/embed/YY9MjGFfqx4" },
+    { title: "Engeyum Eppothum", video: "https://www.youtube.com/embed/M4h18ZocPfA" },
+    { title: "Vennilave - Minsara Kanavu", video: "https://www.youtube.com/embed/jXDBPivT2T8" }
   ],
-  Cool: [
-    "😎 <a href='https://youtu.be/dtRwC8CEo7M' target='_blank'>Naan Pizhaippeno – ENPT</a>",
-    "🧊 <a href='https://youtu.be/ZHR86EO7mZ0' target='_blank'>Vinnaithaandi – VTV</a>"
+  angry: [
+    { title: "Thee Illai - Arima Nambi", video: "https://www.youtube.com/embed/WK3zrQ7A59c" },
+    { title: "Udhungada Sangu - VIP", video: "https://www.youtube.com/embed/NsHY5JqShRM" },
+    { title: "Yaar Ivan", video: "https://www.youtube.com/embed/madI9G1CtSg" }
   ],
-  Heartbroken: [
-    "💔 <a href='https://youtu.be/YxUPCmKYvSk' target='_blank'>Suttrum Vizhi – Ghajini</a>",
-    "😭 <a href='https://youtu.be/V1mBNz3rC-E' target='_blank'>Suttrum Vizhi – Kandukondain</a>"
+  romantic: [
+    { title: "Anbil Avan - VTV", video: "https://www.youtube.com/embed/lEPVkmXrUAA" },
+    { title: "Thalli Pogathey", video: "https://www.youtube.com/embed/YpuaZ5N1XZg" },
+    { title: "Neeyum Naanum Anbe", video: "https://www.youtube.com/embed/MQ9PlR6ZjzU" }
   ],
-  Party: [
-    "🕺 <a href='https://youtu.be/BE5pl1nH2FQ' target='_blank'>Dippam Dappam – Kaathuvaakula Rendu Kaadhal</a>",
-    "🎉 <a href='https://youtu.be/Jv3MJ1N4pVY' target='_blank'>Jimikki Kammal Tamil</a>"
-  ],
-  Calm: [
-    "🧘 <a href='https://youtu.be/9Ke4480MicU' target='_blank'>Azhagiye – Kaatru Veliyidai</a>",
-    "🍃 <a href='https://youtu.be/dOT2d6_zN1M' target='_blank'>Munbe Vaa – Sillunu Oru Kaadhal</a>"
+  energetic: [
+    { title: "Don'u Don'u Don'u - Maari", video: "https://www.youtube.com/embed/A4MmvMwqY8M" },
+    { title: "Oodha Coloru Ribbon", video: "https://www.youtube.com/embed/v8GO3iHxHfo" },
+    { title: "Mersal Arasan - Mersal", video: "https://www.youtube.com/embed/NcV0Lh1V5T4" }
   ]
 };
 
-document.querySelectorAll("[data-mood]").forEach(button => {
-  button.addEventListener("click", () => {
-    const mood = button.dataset.mood;
-    const section = document.getElementById("playlistSection");
-    const list = playlistData[mood]
-      .map(song => `<li>${song}</li>`)
-      .join("");
-    section.innerHTML = `<h3>${mood} Tamil Songs 🎶</h3><ul>${list}</ul>`;
-    section.classList.add("active");
-    localStorage.setItem("lastMood", mood);
-  });
-});
-
-document.getElementById("toggleTheme").addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-});
-
-window.addEventListener("load", () => {
-  const lastMood = localStorage.getItem("lastMood");
-  if (lastMood && playlistData[lastMood]) {
-    const section = document.getElementById("playlistSection");
-    const list = playlistData[lastMood]
-      .map(song => `<li>${song}</li>`)
-      .join("");
-    section.innerHTML = `<h3>${lastMood} Tamil Songs 🎶</h3><ul>${list}</ul>`;
-    section.classList.add("active");
+function typeWriter(element, text, i = 0) {
+  if (i < text.length) {
+    element.innerHTML += text.charAt(i);
+    setTimeout(() => typeWriter(element, text, i + 1), 50);
   }
-});
+}
+
+function showSongs(mood) {
+  const container = document.getElementById("cardSection");
+  container.innerHTML = "";
+
+  songs[mood].forEach(song => {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    const title = document.createElement("h3");
+    card.appendChild(title);
+    typeWriter(title, song.title);
+
+    const iframe = document.createElement("iframe");
+    iframe.src = song.video;
+    iframe.allowFullscreen = true;
+    card.appendChild(iframe);
+
+    container.appendChild(card);
+  });
+}
